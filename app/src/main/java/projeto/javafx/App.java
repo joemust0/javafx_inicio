@@ -3,12 +3,27 @@
  */
 package projeto.javafx;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class App extends Application {
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        launch(args);
+    }
+ 
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("Esse e o PALCO");
+        Button button = new Button();
+        button.setText("MUE BOTAO");
+        stackPane stackPane new.StackPane();
+        primaryStage.setScene(new Scene(stackPane, 800, 600));
+        primaryStage.show();
     }
 }
